@@ -50,10 +50,15 @@ int main(int argc, const char * argv[]) {
 //    show_bytes((byte_pointer) &i, sizeof(i));
     
     // example 3
-    short x = 12345;
-    short mx = -x;
-    show_bytes((byte_pointer) &x, sizeof(short));
-    show_bytes((byte_pointer) &mx, sizeof(short));
+//    short x = 12345;
+//    short mx = -x;
+//    show_bytes((byte_pointer) &x, sizeof(short));
+//    show_bytes((byte_pointer) &mx, sizeof(short));
+    
+    // example 4
+    short int v = -12345;
+    unsigned short uv = (unsigned short) v;
+    printf("v = %d, uv = %u\n", v, uv);
     
     return 0;
 }
