@@ -44,10 +44,16 @@ int main(int argc, const char * argv[]) {
 //    test_show_bytes(12345);
     
     // example 2
-    const char *cha = "12345";
-    int i = 6;
-    show_bytes((byte_pointer) cha, sizeof(cha));
-    show_bytes((byte_pointer) &i, sizeof(i));
+//    const char *cha = "12345";
+//    int i = 6;
+//    show_bytes((byte_pointer) cha, sizeof(cha));
+//    show_bytes((byte_pointer) &i, sizeof(i));
+    
+    // example 3
+    short x = 12345;
+    short mx = -x;
+    show_bytes((byte_pointer) &x, sizeof(short));
+    show_bytes((byte_pointer) &mx, sizeof(short));
     
     return 0;
 }
