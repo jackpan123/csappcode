@@ -56,9 +56,16 @@ int main(int argc, const char * argv[]) {
 //    show_bytes((byte_pointer) &mx, sizeof(short));
     
     // example 4
-    short int v = -12345;
-    unsigned short uv = (unsigned short) v;
-    printf("v = %d, uv = %u\n", v, uv);
+//    short int v = -12345;
+//    unsigned short uv = (unsigned short) v;
+//    printf("v = %d, uv = %u\n", v, uv);
+    
+    
+    // 2.2.4 example2
+    unsigned  u = 4294967295u;
+    int tu = (int) u;
+    printf("u = %u, tu = %d\n", u, tu);
+    
     
     return 0;
 }
