@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
     printf("tadd_ok return value: %d\n", tadd_ok(x, y));
     
     int x1 = INT_MIN;
-    int y1 = -3;
+    int y1 = INT_MIN;
     // negative overflow -1
     printf("tadd_ok return value: %d\n", tadd_ok(x1, y1));
     
