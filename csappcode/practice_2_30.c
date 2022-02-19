@@ -32,9 +32,9 @@ int main(int argc, const char * argv[]) {
     // negative overflow -1
     printf("tadd_ok return value: %d\n", tadd_ok(x1, y1));
     
-    int x2 = 6;
-    int y2 = -3;
+    int x2 = 1;
+    int y2 = INT_MIN;
     // negative overflow 1
-    printf("tadd_ok return value: %d\n", tadd_ok(x2, y2));
+    printf("tadd_ok return value: %d\n", tadd_ok(x2, -y2));
     return 0;
 }
